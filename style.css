@@ -103,7 +103,7 @@ button:active {
   display: none;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   #mobile-devider {
     display: block;
   }
