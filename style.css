@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./assets/fonts/Manrope-Regular.ttf") format("truetype");
+}
+
+:root {
+  --primary-blue-200: hsl(193, 38%, 86%);
+  --primary-green-300: hsl(150, 100%, 66%);
+
+  --neutral-blue-600: hsl(217, 19%, 38%);
+  --neutral-blue-900: hsl(217, 19%, 24%);
+  --neutral-blue-950: hsl(218, 23%, 16%);
+
+  --font-quote: 28px;
+
+  --our-font: "Manrope", sans-serif;
+
+  --font-bold: 800;
+  --font-semi-bold: 600;
+  --font-medium: 500;
+}
+
+body {
+  background-color: var(--neutral-blue-950);
+  font-family: var(--our-font);
+}
+
+main {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  padding: 2rem;
+  background-color: var(--neutral-blue-900);
+  border-radius: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: var(--font-medium);
+  color: var(--primary-green-300);
+}
+h1::selection {
+  background-color: var(--neutral-blue-950);
+}
+
+p {
+  font-size: var(--font-quote);
+  color: var(--primary-blue-200);
+  width: fit-content;
+  max-width: 400px;
+  min-width: 200px;
+  text-align: center;
+}
+
+p::selection {
+  background-color: var(--primary-green-300);
+  color: var(--neutral-blue-950);
+}
+
+button {
+  margin-inline: auto;
+  translate: 0% -50%;
+  border: none;
+  display: flex;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: var(--primary-green-300);
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  box-shadow: 0px 0px 20px var(--primary-green-300);
+}
+
+button:active {
+  scale: 0.95;
+}
+
+#mobile-devider {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  #mobile-devider {
+    display: block;
+  }
+  #desktop-devider {
+    display: none;
+  }
+  .fullcard {
+    width: 350px;
+  }
+}
+
+@media (max-width: 320px) {
+  .fullcard {
+    width: 310px;
+  }
+}
