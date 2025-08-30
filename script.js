@@ -37,7 +37,7 @@ getAdviceBtn.addEventListener('click', () => {
         .then(data => {
             const newAdvice = data.slip.advice;
             const adviceNum = data.slip.id;
-            adviceNoElement.innerText = `ADVICE #${adviceNum}`;
+            adviceNoElement.innerText = `MUFT KA GYAAN #${adviceNum}`;
             typeAdviceText(`"${newAdvice}"`, adviceElement);
         })
         .catch(err => {

@@ -62,14 +62,15 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  margin-block: 1rem;
+  gap: 1.5rem;
+  margin-block: 1.5rem;
 }
 
 h1 {
   font-size: 1rem;
   font-weight: var(--font-medium);
   color: var(--primary-green-300);
+  letter-spacing: 0.3rem;
 }
 h1::selection {
   background-color: var(--neutral-blue-950);
